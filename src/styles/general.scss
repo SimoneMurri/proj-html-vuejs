@@ -1,3 +1,6 @@
-h1 {
-    color: red;
+@use './partials/mixims' as *;
+@use './partials/variables' as *;
+
+*{
+    @include reset;
 }
