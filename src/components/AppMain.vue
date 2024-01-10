@@ -48,10 +48,41 @@
         <button>ASK AN EXPERT</button>
     </div>
   </div>
+  <div class="global">
+    <h4 class="title-global">GLOBAL CHALLENGE. WORLD CLASS RESPONSE</h4>
+    <div class="list-card">
+        <div>
+            <h4 class="our-title">OUR PEOPLE</h4>
+            <ListCard/>
+        </div>
+        <div>
+            <h4 class="our-title">OUR PRACTISE AREA</h4>
+            <ListCard2/>
+        </div>
+        <div>
+            <h4 class="our-title">OUR PUBLICATIONS</h4>
+            <ListCard3/>
+        </div>
+    </div>
+  </div>
+  <div class="container-img">
+    <div class="content-img">
+      <img src="../assets/images/envato-logo.png" alt="Logo">
+      <p><i>"We have worked with Avada Law for the past 15 years. As we have grown and evolved, what i have valued most about our relationship is that Avada Low know us and our business"</i></p>
+      <h5 class="nigel">Nigel Rawlinson • Senior Partner</h5>
+    </div>
+  </div>
 </template>
 <script>
+import ListCard from './ListCard.vue'
+import ListCard2 from './ListCard2.vue'
+import ListCard3 from './ListCard3.vue'
 export default {
-    
+    components:{
+        ListCard,
+        ListCard2,
+        ListCard3
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -138,5 +169,46 @@ button{
     padding: 15px;
     margin-top: 3.25rem;
     font-size: 10px;
+}
+.global{
+    background-color: white;
+    padding: 8rem;
+    height: 1050px;
+}
+.title-global{
+    text-align: center;
+    padding-bottom: 7rem;
+}
+
+.list-card{
+    display: flex;
+    flex-direction: row;
+    padding-left: 4rem;
+}
+
+.our-title{
+    padding-bottom: 1.5rem;
+}
+
+.container-img {
+  position: relative; 
+  width: 100%;
+  height: 300px; 
+  background-image: url('../assets/images/showeare-parallax.jpg');
+  background-size: cover; 
+  background-position: center; 
+}
+
+.content-img {
+  position: absolute; 
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: white; 
+}
+
+.nigel{
+    padding-top: 2rem;
 }
 </style>
