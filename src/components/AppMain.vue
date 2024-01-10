@@ -72,6 +72,25 @@
       <h5 class="nigel">Nigel Rawlinson • Senior Partner</h5>
     </div>
   </div>
+  <div class="container-ipe">
+    <div class="content-ipe">
+      <div class="column-ipe">
+        <img src="../assets/images/law_7.jpg" alt="">
+        <h4>INTERNATIONAL</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </div>
+      <div class="column-ipe">
+        <img src="../assets/images/law_8.jpg" alt="">
+        <h4>PARTNERSHIP</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </div>
+      <div class="column-ipe">
+        <img src="../assets/images/law_3.jpg" alt="">
+        <h4>EXCELLENGE</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 import ListCard from './ListCard.vue'
@@ -210,5 +229,34 @@ button{
 
 .nigel{
     padding-top: 2rem;
+}
+
+div.container-ipe div.content-ipe div.column-ipe img {
+    width: 200px;
+    padding-bottom: 1rem;
+}
+
+.container-ipe {
+    background-color: #f5f5f5;
+    padding: 6rem;
+    height: 600px;
+}
+
+.content-ipe {
+    display: flex;
+    justify-content: center;
+}
+
+.column-ipe {
+    border-top: 5px solid #55A098;
+    padding: 2rem 2rem;
+    background-color: white;
+    text-align: center;
+    height: 400px;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    width: 270px;
+    position: relative;
 }
 </style>
